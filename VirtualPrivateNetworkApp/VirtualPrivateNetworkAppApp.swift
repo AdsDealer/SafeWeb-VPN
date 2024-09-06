@@ -8,10 +8,27 @@
 import SwiftUI
 
 @main
-struct VirtualPrivateNetworkAppApp: App {
+struct MainApp: App {
+    @State private var showSplash = true
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                      if showSplash {
+                          SplashScreen()
+                      } else {
+                          VPNScreen()
+                      }
+                  }
+                  .onAppear {
+                      DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                          withAnimation {
+                              showSplash = false
+                          }
+                      }
+                  }
         }
     }
 }
+

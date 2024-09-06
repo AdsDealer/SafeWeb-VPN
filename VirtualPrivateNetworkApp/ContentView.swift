@@ -1,21 +1,14 @@
-//
-//  ContentView.swift
-//  VirtualPrivateNetworkApp
-//
-//  Created by Иван Свирский on 10.07.24.
-//
+
 
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        ZStack(alignment: .top) {
+            HexagonWall{}
+                .frame(maxWidth: .infinity, maxHeight: UIScreen.screenHeight-(UIScreen.screenHeight * 0.3), alignment: .top)
+             }
     }
 }
 

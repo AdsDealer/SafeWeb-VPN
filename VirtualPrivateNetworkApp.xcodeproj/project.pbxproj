@@ -3,80 +3,241 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE16A94C2C6CDC1400F74F5C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE16A94B2C6CDC1400F74F5C /* Navigation.swift */; };
+		DE16A94F2C6CDD2F00F74F5C /* VPNScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE16A94E2C6CDD2F00F74F5C /* VPNScreen.swift */; };
+		DE16A9512C6CDD2F00F74F5C /* MainHexagonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE16A9502C6CDD2F00F74F5C /* MainHexagonScreen.swift */; };
+		DE16A98D2C6CDD2F00F74F5C /* SelectServerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE16A98C2C6CDD2F00F74F5C /* SelectServerScreen.swift */; };
+		DE16A98F2C6CDD2F00F74F5C /* ServerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE16A98E2C6CDD2F00F74F5C /* ServerButton.swift */; };
+		DE1D473E2C786D0100914F5D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1D473D2C786D0100914F5D /* NetworkExtension.framework */; };
+		DE1D47412C786D0100914F5D /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1D47402C786D0100914F5D /* PacketTunnelProvider.swift */; };
+		DE1D47462C786D0100914F5D /* WireGuardExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DE1D473B2C786D0100914F5D /* WireGuardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DE7429442C87038A0097D93F /* ConnectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7429432C87038A0097D93F /* ConnectionViewModel.swift */; };
+		DE8102FD2C80E2B000E982F9 /* WireGuardKit in Frameworks */ = {isa = PBXBuildFile; productRef = DE8102FC2C80E2B000E982F9 /* WireGuardKit */; };
+		DE833F4B2C5B858A00991798 /* ColorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE833F4A2C5B858A00991798 /* ColorHelpers.swift */; };
+		DE833F4D2C5B977900991798 /* PayHexagonWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE833F4C2C5B977900991798 /* PayHexagonWall.swift */; };
+		DE97BDDC2C6DF9C300C7A201 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE97BDDB2C6DF9C300C7A201 /* SideMenu.swift */; };
+		DE97BDDE2C6DF9D700C7A201 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE97BDDD2C6DF9D700C7A201 /* SideMenuView.swift */; };
+		DE97BDE12C6E4B7400C7A201 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE97BDE02C6E4B7400C7A201 /* SplashScreen.swift */; };
+		DEB1A8582C859C1700E478B6 /* WireGuardKit in Frameworks */ = {isa = PBXBuildFile; productRef = DEB1A8572C859C1700E478B6 /* WireGuardKit */; };
+		DEB1A85B2C859D2E00E478B6 /* ConnectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1A85A2C859D2E00E478B6 /* ConnectionService.swift */; };
+		DEB1A85F2C85C3DC00E478B6 /* ServerInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1A85E2C85C3DC00E478B6 /* ServerInfoService.swift */; };
+		DEC06C7A2C898E7600C01EC5 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = DEC06C792C898E7600C01EC5 /* Shimmer */; };
+		DEC06C7D2C89A69200C01EC5 /* InfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC06C7C2C89A69200C01EC5 /* InfoScreen.swift */; };
+		DEC06C7F2C89A86A00C01EC5 /* InfoContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC06C7E2C89A86900C01EC5 /* InfoContent.swift */; };
 		DEC3AE162C3ED1960080D8C9 /* VirtualPrivateNetworkAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE152C3ED1960080D8C9 /* VirtualPrivateNetworkAppApp.swift */; };
 		DEC3AE182C3ED1960080D8C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE172C3ED1960080D8C9 /* ContentView.swift */; };
 		DEC3AE1A2C3ED1980080D8C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC3AE192C3ED1980080D8C9 /* Assets.xcassets */; };
 		DEC3AE1D2C3ED1980080D8C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC3AE1C2C3ED1980080D8C9 /* Preview Assets.xcassets */; };
-		DEC3AE272C3ED1980080D8C9 /* VirtualPrivateNetworkAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE262C3ED1980080D8C9 /* VirtualPrivateNetworkAppTests.swift */; };
-		DEC3AE312C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE302C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITests.swift */; };
-		DEC3AE332C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE322C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITestsLaunchTests.swift */; };
+		DEC3AE412C3ED1E30080D8C9 /* Paywall.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE402C3ED1E20080D8C9 /* Paywall.swift */; };
+		DEC3AE442C3ED2BD0080D8C9 /* HexagonParametrs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE432C3ED2BD0080D8C9 /* HexagonParametrs.swift */; };
+		DEC3AE462C3ED3040080D8C9 /* HexagonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE452C3ED3040080D8C9 /* HexagonItem.swift */; };
+		DEC3AE492C3ED6A60080D8C9 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE482C3ED6A60080D8C9 /* Helpers.swift */; };
+		DEC3AE4B2C3EDCBC0080D8C9 /* HexagonWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE4A2C3EDCBC0080D8C9 /* HexagonWall.swift */; };
+		DEC3AE4D2C3EE4390080D8C9 /* SubscriptionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE4C2C3EE4390080D8C9 /* SubscriptionInfo.swift */; };
+		DEC3AE4F2C3EE8C80080D8C9 /* PaywallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3AE4E2C3EE8C80080D8C9 /* PaywallButton.swift */; };
+		FA1C4A742C8B1C7500202ABB /* SpaceArmor.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA1C4A732C8B1C7500202ABB /* SpaceArmor.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DEC3AE232C3ED1980080D8C9 /* PBXContainerItemProxy */ = {
+		DE1D47442C786D0100914F5D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DEC3AE0A2C3ED1960080D8C9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DEC3AE112C3ED1960080D8C9;
-			remoteInfo = VirtualPrivateNetworkApp;
+			remoteGlobalIDString = DE1D473A2C786D0100914F5D;
+			remoteInfo = WireGuardExtension;
 		};
-		DEC3AE2D2C3ED1980080D8C9 /* PBXContainerItemProxy */ = {
+		DEB1A8502C859ADA00E478B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DEC3AE0A2C3ED1960080D8C9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DEC3AE112C3ED1960080D8C9;
-			remoteInfo = VirtualPrivateNetworkApp;
+			remoteGlobalIDString = DE1D474B2C786D9800914F5D;
+			remoteInfo = WireGuardGoBridge;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DE1D474A2C786D0100914F5D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DE1D47462C786D0100914F5D /* WireGuardExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		DEC3AE122C3ED1960080D8C9 /* VirtualPrivateNetworkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualPrivateNetworkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE16A94B2C6CDC1400F74F5C /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		DE16A94E2C6CDD2F00F74F5C /* VPNScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNScreen.swift; sourceTree = "<group>"; };
+		DE16A9502C6CDD2F00F74F5C /* MainHexagonScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHexagonScreen.swift; sourceTree = "<group>"; };
+		DE16A9522C6CDD2F00F74F5C /* Oxanium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Oxanium.ttf; path = "../../../../../Downloads/Montserrat,Oxanium 2/Oxanium/static/Oxanium.ttf"; sourceTree = "<group>"; };
+		DE16A9532C6CDD2F00F74F5C /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Montserrat.ttf; path = "../../../../../Downloads/Montserrat,Oxanium 2/Montserrat/static/Montserrat.ttf"; sourceTree = "<group>"; };
+		DE16A98B2C6CDD2F00F74F5C /* VirtualPrivateNetworkApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VirtualPrivateNetworkApp.entitlements; sourceTree = "<group>"; };
+		DE16A98C2C6CDD2F00F74F5C /* SelectServerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectServerScreen.swift; sourceTree = "<group>"; };
+		DE16A98E2C6CDD2F00F74F5C /* ServerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerButton.swift; sourceTree = "<group>"; };
+		DE1D473B2C786D0100914F5D /* WireGuardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WireGuardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1D473D2C786D0100914F5D /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		DE1D47402C786D0100914F5D /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		DE1D47422C786D0100914F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE1D47432C786D0100914F5D /* WireGuardExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WireGuardExtension.entitlements; sourceTree = "<group>"; };
+		DE7429432C87038A0097D93F /* ConnectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewModel.swift; sourceTree = "<group>"; };
+		DE833F4A2C5B858A00991798 /* ColorHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelpers.swift; sourceTree = "<group>"; };
+		DE833F4C2C5B977900991798 /* PayHexagonWall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayHexagonWall.swift; sourceTree = "<group>"; };
+		DE97BDDB2C6DF9C300C7A201 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		DE97BDDD2C6DF9D700C7A201 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		DE97BDE02C6E4B7400C7A201 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		DEB1A85A2C859D2E00E478B6 /* ConnectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionService.swift; sourceTree = "<group>"; };
+		DEB1A85E2C85C3DC00E478B6 /* ServerInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerInfoService.swift; sourceTree = "<group>"; };
+		DEC06C7C2C89A69200C01EC5 /* InfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoScreen.swift; sourceTree = "<group>"; };
+		DEC06C7E2C89A86900C01EC5 /* InfoContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoContent.swift; sourceTree = "<group>"; };
+		DEC3AE122C3ED1960080D8C9 /* Safe Web VPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safe Web VPN.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC3AE152C3ED1960080D8C9 /* VirtualPrivateNetworkAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualPrivateNetworkAppApp.swift; sourceTree = "<group>"; };
 		DEC3AE172C3ED1960080D8C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEC3AE192C3ED1980080D8C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEC3AE1C2C3ED1980080D8C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DEC3AE222C3ED1980080D8C9 /* VirtualPrivateNetworkAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtualPrivateNetworkAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEC3AE262C3ED1980080D8C9 /* VirtualPrivateNetworkAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualPrivateNetworkAppTests.swift; sourceTree = "<group>"; };
-		DEC3AE2C2C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtualPrivateNetworkAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEC3AE302C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualPrivateNetworkAppUITests.swift; sourceTree = "<group>"; };
-		DEC3AE322C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualPrivateNetworkAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DEC3AE402C3ED1E20080D8C9 /* Paywall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paywall.swift; sourceTree = "<group>"; };
+		DEC3AE432C3ED2BD0080D8C9 /* HexagonParametrs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParametrs.swift; sourceTree = "<group>"; };
+		DEC3AE452C3ED3040080D8C9 /* HexagonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonItem.swift; sourceTree = "<group>"; };
+		DEC3AE482C3ED6A60080D8C9 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		DEC3AE4A2C3EDCBC0080D8C9 /* HexagonWall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonWall.swift; sourceTree = "<group>"; };
+		DEC3AE4C2C3EE4390080D8C9 /* SubscriptionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionInfo.swift; sourceTree = "<group>"; };
+		DEC3AE4E2C3EE8C80080D8C9 /* PaywallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallButton.swift; sourceTree = "<group>"; };
+		DEF5481C2C62823300CAAABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA1C4A732C8B1C7500202ABB /* SpaceArmor.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SpaceArmor.otf; path = ../../../Downloads/SpaceArmor.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DE1D47382C786D0100914F5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB1A8582C859C1700E478B6 /* WireGuardKit in Frameworks */,
+				DE1D473E2C786D0100914F5D /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEC3AE0F2C3ED1960080D8C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEC3AE1F2C3ED1980080D8C9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEC3AE292C3ED1980080D8C9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DEC06C7A2C898E7600C01EC5 /* Shimmer in Frameworks */,
+				DE8102FD2C80E2B000E982F9 /* WireGuardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE16A94A2C6CDB9900F74F5C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DE16A94B2C6CDC1400F74F5C /* Navigation.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		DE16A94D2C6CDD0F00F74F5C /* VPN */ = {
+			isa = PBXGroup;
+			children = (
+				DE7429422C8703720097D93F /* ViewModel */,
+				DEB1A85C2C85C32300E478B6 /* Services */,
+				DE16A94E2C6CDD2F00F74F5C /* VPNScreen.swift */,
+				DE16A98C2C6CDD2F00F74F5C /* SelectServerScreen.swift */,
+				DE16A98E2C6CDD2F00F74F5C /* ServerButton.swift */,
+			);
+			path = VPN;
+			sourceTree = "<group>";
+		};
+		DE1D473C2C786D0100914F5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE1D473D2C786D0100914F5D /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE1D473F2C786D0100914F5D /* WireGuardExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DE1D47402C786D0100914F5D /* PacketTunnelProvider.swift */,
+				DE1D47422C786D0100914F5D /* Info.plist */,
+				DE1D47432C786D0100914F5D /* WireGuardExtension.entitlements */,
+			);
+			path = WireGuardExtension;
+			sourceTree = "<group>";
+		};
+		DE7429422C8703720097D93F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE7429432C87038A0097D93F /* ConnectionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE97BDDA2C6DF9A700C7A201 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DE97BDDB2C6DF9C300C7A201 /* SideMenu.swift */,
+				DE97BDDD2C6DF9D700C7A201 /* SideMenuView.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		DE97BDDF2C6E4B5D00C7A201 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DE97BDE02C6E4B7400C7A201 /* SplashScreen.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		DEB1A8592C859D0D00E478B6 /* ConnectionService */ = {
+			isa = PBXGroup;
+			children = (
+				DEB1A85A2C859D2E00E478B6 /* ConnectionService.swift */,
+			);
+			path = ConnectionService;
+			sourceTree = "<group>";
+		};
+		DEB1A85C2C85C32300E478B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DEB1A85D2C85C3AF00E478B6 /* ServerInfoService */,
+				DEB1A8592C859D0D00E478B6 /* ConnectionService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DEB1A85D2C85C3AF00E478B6 /* ServerInfoService */ = {
+			isa = PBXGroup;
+			children = (
+				DEB1A85E2C85C3DC00E478B6 /* ServerInfoService.swift */,
+			);
+			path = ServerInfoService;
+			sourceTree = "<group>";
+		};
+		DEC06C7B2C89A67D00C01EC5 /* InfoScreens */ = {
+			isa = PBXGroup;
+			children = (
+				DEC06C7C2C89A69200C01EC5 /* InfoScreen.swift */,
+				DEC06C7E2C89A86900C01EC5 /* InfoContent.swift */,
+			);
+			path = InfoScreens;
+			sourceTree = "<group>";
+		};
 		DEC3AE092C3ED1960080D8C9 = {
 			isa = PBXGroup;
 			children = (
 				DEC3AE142C3ED1960080D8C9 /* VirtualPrivateNetworkApp */,
-				DEC3AE252C3ED1980080D8C9 /* VirtualPrivateNetworkAppTests */,
-				DEC3AE2F2C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITests */,
+				DE1D473F2C786D0100914F5D /* WireGuardExtension */,
+				DE1D473C2C786D0100914F5D /* Frameworks */,
 				DEC3AE132C3ED1960080D8C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,9 +245,8 @@
 		DEC3AE132C3ED1960080D8C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEC3AE122C3ED1960080D8C9 /* VirtualPrivateNetworkApp.app */,
-				DEC3AE222C3ED1980080D8C9 /* VirtualPrivateNetworkAppTests.xctest */,
-				DEC3AE2C2C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITests.xctest */,
+				DEC3AE122C3ED1960080D8C9 /* Safe Web VPN.app */,
+				DE1D473B2C786D0100914F5D /* WireGuardExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +254,22 @@
 		DEC3AE142C3ED1960080D8C9 /* VirtualPrivateNetworkApp */ = {
 			isa = PBXGroup;
 			children = (
+				DEC06C7B2C89A67D00C01EC5 /* InfoScreens */,
+				DE97BDDF2C6E4B5D00C7A201 /* SplashScreen */,
+				DE97BDDA2C6DF9A700C7A201 /* SideMenu */,
+				DE16A98B2C6CDD2F00F74F5C /* VirtualPrivateNetworkApp.entitlements */,
+				DE16A94D2C6CDD0F00F74F5C /* VPN */,
+				DE16A94A2C6CDB9900F74F5C /* Navigation */,
+				DEF5481C2C62823300CAAABC /* Info.plist */,
+				DEC3AE472C3ED6950080D8C9 /* Helpers */,
+				DEC3AE422C3ED29C0080D8C9 /* Hexagon */,
+				DEC3AE3F2C3ED1C20080D8C9 /* PayWall */,
 				DEC3AE152C3ED1960080D8C9 /* VirtualPrivateNetworkAppApp.swift */,
 				DEC3AE172C3ED1960080D8C9 /* ContentView.swift */,
 				DEC3AE192C3ED1980080D8C9 /* Assets.xcassets */,
+				DE16A9522C6CDD2F00F74F5C /* Oxanium.ttf */,
+				DE16A9532C6CDD2F00F74F5C /* Montserrat.ttf */,
+				FA1C4A732C8B1C7500202ABB /* SpaceArmor.otf */,
 				DEC3AE1B2C3ED1980080D8C9 /* Preview Content */,
 			);
 			path = VirtualPrivateNetworkApp;
@@ -110,26 +283,78 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DEC3AE252C3ED1980080D8C9 /* VirtualPrivateNetworkAppTests */ = {
+		DEC3AE3F2C3ED1C20080D8C9 /* PayWall */ = {
 			isa = PBXGroup;
 			children = (
-				DEC3AE262C3ED1980080D8C9 /* VirtualPrivateNetworkAppTests.swift */,
+				DEC3AE402C3ED1E20080D8C9 /* Paywall.swift */,
+				DEC3AE4C2C3EE4390080D8C9 /* SubscriptionInfo.swift */,
+				DEC3AE4E2C3EE8C80080D8C9 /* PaywallButton.swift */,
+				DE833F4C2C5B977900991798 /* PayHexagonWall.swift */,
 			);
-			path = VirtualPrivateNetworkAppTests;
+			path = PayWall;
 			sourceTree = "<group>";
 		};
-		DEC3AE2F2C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITests */ = {
+		DEC3AE422C3ED29C0080D8C9 /* Hexagon */ = {
 			isa = PBXGroup;
 			children = (
-				DEC3AE302C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITests.swift */,
-				DEC3AE322C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITestsLaunchTests.swift */,
+				DEC3AE432C3ED2BD0080D8C9 /* HexagonParametrs.swift */,
+				DEC3AE452C3ED3040080D8C9 /* HexagonItem.swift */,
+				DEC3AE4A2C3EDCBC0080D8C9 /* HexagonWall.swift */,
+				DE16A9502C6CDD2F00F74F5C /* MainHexagonScreen.swift */,
 			);
-			path = VirtualPrivateNetworkAppUITests;
+			path = Hexagon;
+			sourceTree = "<group>";
+		};
+		DEC3AE472C3ED6950080D8C9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DEC3AE482C3ED6A60080D8C9 /* Helpers.swift */,
+				DE833F4A2C5B858A00991798 /* ColorHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		DE1D474B2C786D9800914F5D /* WireGuardGoBridge */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = DE1D474C2C786D9800914F5D /* Build configuration list for PBXLegacyTarget "WireGuardGoBridge" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "$PROJECT_DIR/wireguard-apple/Sources/WireGuardKitGo";
+			dependencies = (
+			);
+			name = WireGuardGoBridge;
+			passBuildSettingsInEnvironment = 1;
+			productName = WireGuardGoBridge;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
+		DE1D473A2C786D0100914F5D /* WireGuardExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE1D47472C786D0100914F5D /* Build configuration list for PBXNativeTarget "WireGuardExtension" */;
+			buildPhases = (
+				DE1D47372C786D0100914F5D /* Sources */,
+				DE1D47382C786D0100914F5D /* Frameworks */,
+				DE1D47392C786D0100914F5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEB1A8512C859ADA00E478B6 /* PBXTargetDependency */,
+			);
+			name = WireGuardExtension;
+			packageProductDependencies = (
+				DEB1A8572C859C1700E478B6 /* WireGuardKit */,
+			);
+			productName = WireGuardExtension;
+			productReference = DE1D473B2C786D0100914F5D /* WireGuardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DEC3AE112C3ED1960080D8C9 /* VirtualPrivateNetworkApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEC3AE362C3ED1980080D8C9 /* Build configuration list for PBXNativeTarget "VirtualPrivateNetworkApp" */;
@@ -137,51 +362,21 @@
 				DEC3AE0E2C3ED1960080D8C9 /* Sources */,
 				DEC3AE0F2C3ED1960080D8C9 /* Frameworks */,
 				DEC3AE102C3ED1960080D8C9 /* Resources */,
+				DE1D474A2C786D0100914F5D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DE1D47452C786D0100914F5D /* PBXTargetDependency */,
 			);
 			name = VirtualPrivateNetworkApp;
+			packageProductDependencies = (
+				DE8102FC2C80E2B000E982F9 /* WireGuardKit */,
+				DEC06C792C898E7600C01EC5 /* Shimmer */,
+			);
 			productName = VirtualPrivateNetworkApp;
-			productReference = DEC3AE122C3ED1960080D8C9 /* VirtualPrivateNetworkApp.app */;
+			productReference = DEC3AE122C3ED1960080D8C9 /* Safe Web VPN.app */;
 			productType = "com.apple.product-type.application";
-		};
-		DEC3AE212C3ED1980080D8C9 /* VirtualPrivateNetworkAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DEC3AE392C3ED1980080D8C9 /* Build configuration list for PBXNativeTarget "VirtualPrivateNetworkAppTests" */;
-			buildPhases = (
-				DEC3AE1E2C3ED1980080D8C9 /* Sources */,
-				DEC3AE1F2C3ED1980080D8C9 /* Frameworks */,
-				DEC3AE202C3ED1980080D8C9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DEC3AE242C3ED1980080D8C9 /* PBXTargetDependency */,
-			);
-			name = VirtualPrivateNetworkAppTests;
-			productName = VirtualPrivateNetworkAppTests;
-			productReference = DEC3AE222C3ED1980080D8C9 /* VirtualPrivateNetworkAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DEC3AE2B2C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DEC3AE3C2C3ED1980080D8C9 /* Build configuration list for PBXNativeTarget "VirtualPrivateNetworkAppUITests" */;
-			buildPhases = (
-				DEC3AE282C3ED1980080D8C9 /* Sources */,
-				DEC3AE292C3ED1980080D8C9 /* Frameworks */,
-				DEC3AE2A2C3ED1980080D8C9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DEC3AE2E2C3ED1980080D8C9 /* PBXTargetDependency */,
-			);
-			name = VirtualPrivateNetworkAppUITests;
-			productName = VirtualPrivateNetworkAppUITests;
-			productReference = DEC3AE2C2C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -193,16 +388,14 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					DE1D473A2C786D0100914F5D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					DE1D474B2C786D9800914F5D = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					DEC3AE112C3ED1960080D8C9 = {
 						CreatedOnToolsVersion = 15.2;
-					};
-					DEC3AE212C3ED1980080D8C9 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = DEC3AE112C3ED1960080D8C9;
-					};
-					DEC3AE2B2C3ED1980080D8C9 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = DEC3AE112C3ED1960080D8C9;
 					};
 				};
 			};
@@ -215,86 +408,188 @@
 				Base,
 			);
 			mainGroup = DEC3AE092C3ED1960080D8C9;
+			packageReferences = (
+				DEB1A8542C859C0700E478B6 /* XCLocalSwiftPackageReference "wireguard-apple" */,
+				DEC06C782C898E7600C01EC5 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
+			);
 			productRefGroup = DEC3AE132C3ED1960080D8C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				DEC3AE112C3ED1960080D8C9 /* VirtualPrivateNetworkApp */,
-				DEC3AE212C3ED1980080D8C9 /* VirtualPrivateNetworkAppTests */,
-				DEC3AE2B2C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITests */,
+				DE1D473A2C786D0100914F5D /* WireGuardExtension */,
+				DE1D474B2C786D9800914F5D /* WireGuardGoBridge */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DE1D47392C786D0100914F5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEC3AE102C3ED1960080D8C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DEC3AE1D2C3ED1980080D8C9 /* Preview Assets.xcassets in Resources */,
+				FA1C4A742C8B1C7500202ABB /* SpaceArmor.otf in Resources */,
 				DEC3AE1A2C3ED1980080D8C9 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEC3AE202C3ED1980080D8C9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEC3AE2A2C3ED1980080D8C9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DE1D47372C786D0100914F5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1D47412C786D0100914F5D /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEC3AE0E2C3ED1960080D8C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE16A98F2C6CDD2F00F74F5C /* ServerButton.swift in Sources */,
+				DE16A94F2C6CDD2F00F74F5C /* VPNScreen.swift in Sources */,
+				DE7429442C87038A0097D93F /* ConnectionViewModel.swift in Sources */,
+				DEB1A85F2C85C3DC00E478B6 /* ServerInfoService.swift in Sources */,
 				DEC3AE182C3ED1960080D8C9 /* ContentView.swift in Sources */,
+				DEC3AE492C3ED6A60080D8C9 /* Helpers.swift in Sources */,
+				DEC3AE4D2C3EE4390080D8C9 /* SubscriptionInfo.swift in Sources */,
+				DE16A94C2C6CDC1400F74F5C /* Navigation.swift in Sources */,
+				DE97BDDE2C6DF9D700C7A201 /* SideMenuView.swift in Sources */,
+				DEC3AE4B2C3EDCBC0080D8C9 /* HexagonWall.swift in Sources */,
+				DEC3AE412C3ED1E30080D8C9 /* Paywall.swift in Sources */,
+				DE97BDDC2C6DF9C300C7A201 /* SideMenu.swift in Sources */,
+				DEC3AE4F2C3EE8C80080D8C9 /* PaywallButton.swift in Sources */,
+				DEB1A85B2C859D2E00E478B6 /* ConnectionService.swift in Sources */,
+				DEC06C7D2C89A69200C01EC5 /* InfoScreen.swift in Sources */,
+				DEC3AE462C3ED3040080D8C9 /* HexagonItem.swift in Sources */,
+				DE16A9512C6CDD2F00F74F5C /* MainHexagonScreen.swift in Sources */,
+				DE833F4D2C5B977900991798 /* PayHexagonWall.swift in Sources */,
+				DEC3AE442C3ED2BD0080D8C9 /* HexagonParametrs.swift in Sources */,
+				DEC06C7F2C89A86A00C01EC5 /* InfoContent.swift in Sources */,
+				DE97BDE12C6E4B7400C7A201 /* SplashScreen.swift in Sources */,
+				DE16A98D2C6CDD2F00F74F5C /* SelectServerScreen.swift in Sources */,
 				DEC3AE162C3ED1960080D8C9 /* VirtualPrivateNetworkAppApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEC3AE1E2C3ED1980080D8C9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEC3AE272C3ED1980080D8C9 /* VirtualPrivateNetworkAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEC3AE282C3ED1980080D8C9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEC3AE312C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITests.swift in Sources */,
-				DEC3AE332C3ED1980080D8C9 /* VirtualPrivateNetworkAppUITestsLaunchTests.swift in Sources */,
+				DE833F4B2C5B858A00991798 /* ColorHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DEC3AE242C3ED1980080D8C9 /* PBXTargetDependency */ = {
+		DE1D47452C786D0100914F5D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DEC3AE112C3ED1960080D8C9 /* VirtualPrivateNetworkApp */;
-			targetProxy = DEC3AE232C3ED1980080D8C9 /* PBXContainerItemProxy */;
+			target = DE1D473A2C786D0100914F5D /* WireGuardExtension */;
+			targetProxy = DE1D47442C786D0100914F5D /* PBXContainerItemProxy */;
 		};
-		DEC3AE2E2C3ED1980080D8C9 /* PBXTargetDependency */ = {
+		DEB1A8512C859ADA00E478B6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DEC3AE112C3ED1960080D8C9 /* VirtualPrivateNetworkApp */;
-			targetProxy = DEC3AE2D2C3ED1980080D8C9 /* PBXContainerItemProxy */;
+			target = DE1D474B2C786D9800914F5D /* WireGuardGoBridge */;
+			targetProxy = DEB1A8502C859ADA00E478B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		DE1D47482C786D0100914F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WireGuardExtension/WireGuardExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YM6Q4TLBGT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WireGuardExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WireGuardExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PATH = "${PATH}:/opt/homebrew/bin";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adscloud.defensewall.SafeWebWireguradExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE1D47492C786D0100914F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WireGuardExtension/WireGuardExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YM6Q4TLBGT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WireGuardExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WireGuardExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PATH = "${PATH}:/opt/homebrew/bin";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adscloud.defensewall.SafeWebWireguradExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE1D474D2C786D9800914F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 572KB688NC;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "${PATH}:/opt/homebrew/bin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DE1D474E2C786D9800914F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 572KB688NC;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "${PATH}:/opt/homebrew/bin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		DEC3AE342C3ED1980080D8C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -417,13 +712,17 @@
 		DEC3AE372C3ED1980080D8C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VirtualPrivateNetworkApp/VirtualPrivateNetworkApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VirtualPrivateNetworkApp/Preview Content\"";
+				DEVELOPMENT_TEAM = YM6Q4TLBGT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VirtualPrivateNetworkApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -434,8 +733,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "die-of-code.VirtualPrivateNetworkApp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PATH = "${PATH}:/opt/homebrew/bin";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adscloud.defensewall;
+				PRODUCT_NAME = "Safe Web VPN";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,13 +749,17 @@
 		DEC3AE382C3ED1980080D8C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VirtualPrivateNetworkApp/VirtualPrivateNetworkApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VirtualPrivateNetworkApp/Preview Content\"";
+				DEVELOPMENT_TEAM = YM6Q4TLBGT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VirtualPrivateNetworkApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,89 +770,40 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "die-of-code.VirtualPrivateNetworkApp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PATH = "${PATH}:/opt/homebrew/bin";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adscloud.defensewall;
+				PRODUCT_NAME = "Safe Web VPN";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		DEC3AE3A2C3ED1980080D8C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "die-of-code.VirtualPrivateNetworkAppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirtualPrivateNetworkApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VirtualPrivateNetworkApp";
-			};
-			name = Debug;
-		};
-		DEC3AE3B2C3ED1980080D8C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "die-of-code.VirtualPrivateNetworkAppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirtualPrivateNetworkApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VirtualPrivateNetworkApp";
-			};
-			name = Release;
-		};
-		DEC3AE3D2C3ED1980080D8C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "die-of-code.VirtualPrivateNetworkAppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VirtualPrivateNetworkApp;
-			};
-			name = Debug;
-		};
-		DEC3AE3E2C3ED1980080D8C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "die-of-code.VirtualPrivateNetworkAppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VirtualPrivateNetworkApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DE1D47472C786D0100914F5D /* Build configuration list for PBXNativeTarget "WireGuardExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1D47482C786D0100914F5D /* Debug */,
+				DE1D47492C786D0100914F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE1D474C2C786D9800914F5D /* Build configuration list for PBXLegacyTarget "WireGuardGoBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1D474D2C786D9800914F5D /* Debug */,
+				DE1D474E2C786D9800914F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DEC3AE0D2C3ED1960080D8C9 /* Build configuration list for PBXProject "VirtualPrivateNetworkApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -563,25 +822,42 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEC3AE392C3ED1980080D8C9 /* Build configuration list for PBXNativeTarget "VirtualPrivateNetworkAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DEC3AE3A2C3ED1980080D8C9 /* Debug */,
-				DEC3AE3B2C3ED1980080D8C9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DEC3AE3C2C3ED1980080D8C9 /* Build configuration list for PBXNativeTarget "VirtualPrivateNetworkAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DEC3AE3D2C3ED1980080D8C9 /* Debug */,
-				DEC3AE3E2C3ED1980080D8C9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		DEB1A8542C859C0700E478B6 /* XCLocalSwiftPackageReference "wireguard-apple" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "wireguard-apple";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DEC06C782C898E7600C01EC5 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markiv/SwiftUI-Shimmer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE8102FC2C80E2B000E982F9 /* WireGuardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WireGuardKit;
+		};
+		DEB1A8572C859C1700E478B6 /* WireGuardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEB1A8542C859C0700E478B6 /* XCLocalSwiftPackageReference "wireguard-apple" */;
+			productName = WireGuardKit;
+		};
+		DEC06C792C898E7600C01EC5 /* Shimmer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEC06C782C898E7600C01EC5 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */;
+			productName = Shimmer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEC3AE0A2C3ED1960080D8C9 /* Project object */;
 }
